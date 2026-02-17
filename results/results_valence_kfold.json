@@ -1,0 +1,15 @@
+{
+  "target": "valence",
+  "cv_method": "kfold",
+  "mean_accuracy": 0.6179514824797844,
+  "std_accuracy": 0.03433891704412459,
+  "mean_f1": 0.5692180635377811,
+  "std_f1": 0.0558879153490901,
+  "num_samples": 85330,
+  "num_features": [
+    85330,
+    7,
+    6
+  ],
+  "model_params": 5188
+}

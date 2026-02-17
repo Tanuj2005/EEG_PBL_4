@@ -1,0 +1,90 @@
+{
+  "target": "arousal",
+  "cv_method": "kfold",
+  "n_splits": 5,
+  "mean_accuracy": 0.577255362915075,
+  "std_accuracy": 0.014288407620377325,
+  "mean_f1": 0.5286991466990354,
+  "std_f1": 0.05595745212426341,
+  "fold_results": [
+    {
+      "fold": 0,
+      "best_epoch": 1,
+      "accuracy": 0.5783132530120482,
+      "f1": 0.42380207854318036,
+      "train_size": 331,
+      "test_size": 83
+    },
+    {
+      "fold": 1,
+      "best_epoch": 3,
+      "accuracy": 0.5783132530120482,
+      "f1": 0.528283934636618,
+      "train_size": 331,
+      "test_size": 83
+    },
+    {
+      "fold": 2,
+      "best_epoch": 10,
+      "accuracy": 0.6024096385542169,
+      "f1": 0.5874352067856166,
+      "train_size": 331,
+      "test_size": 83
+    },
+    {
+      "fold": 3,
+      "best_epoch": 0,
+      "accuracy": 0.5662650602409639,
+      "f1": 0.5443055239827234,
+      "train_size": 331,
+      "test_size": 83
+    },
+    {
+      "fold": 4,
+      "best_epoch": 9,
+      "accuracy": 0.5609756097560976,
+      "f1": 0.5596689895470384,
+      "train_size": 332,
+      "test_size": 82
+    }
+  ],
+  "hyperparams": {
+    "num_epochs": 50,
+    "batch_size": 16,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "gcn_hidden": 32,
+    "num_eigenvalues": 5,
+    "dropout": 0.3,
+    "max_windows": 120
+  },
+  "model_params": 4838,
+  "classification_report": {
+    "Low": {
+      "precision": 0.5911949685534591,
+      "recall": 0.8068669527896996,
+      "f1-score": 0.6823956442831216,
+      "support": 233.0
+    },
+    "High": {
+      "precision": 0.53125,
+      "recall": 0.281767955801105,
+      "f1-score": 0.36823104693140796,
+      "support": 181.0
+    },
+    "accuracy": 0.5772946859903382,
+    "macro avg": {
+      "precision": 0.5612224842767295,
+      "recall": 0.5443174542954022,
+      "f1-score": 0.5253133456072647,
+      "support": 414.0
+    },
+    "weighted avg": {
+      "precision": 0.5649871441375749,
+      "recall": 0.5772946859903382,
+      "f1-score": 0.5450434894023,
+      "support": 414.0
+    }
+  },
+  "timestamp": "2026-02-17T23:16:02.911176"
+}
